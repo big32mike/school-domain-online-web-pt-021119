@@ -21,6 +21,8 @@ class School
   end
 
   def sort
+    binding.pry
+    #@roster.collect {|hash|}
   end
 
 end
