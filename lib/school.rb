@@ -21,8 +21,11 @@ class School
   end
 
   def sort
-    binding.pry
-    #@roster.collect {|hash|}
+    sorted = {}
+    @roster.each do|key, values|
+      sorted[key] ||= values.sorted
+    end
+    sorted
   end
 
 end
