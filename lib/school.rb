@@ -20,12 +20,16 @@ class School
     @roster[grade]
   end
 
-  def sort
+  def sort_pre_refactor
     sorted = {}
     @roster.each do|key, values|
       sorted[key] ||= values.sort
     end
     sorted
+  end
+
+  def sort
+    @roster.map {k, v| v.sort!}
   end
 
 end
