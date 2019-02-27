@@ -29,7 +29,7 @@ class School
   end
 
   def sort
-    @roster.map {k, v| v.sort!}
+    @roster.map {|k, v| v.sort!}
   end
 
 end
