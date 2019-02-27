@@ -9,3 +9,11 @@ class School
     @roster[grade] = [] unless @roster[grade]
     @roster[grade] << name
   end
+
+  def grade
+  end
+
+  def name
+  end
+
+end
