@@ -7,14 +7,9 @@ class School
     @roster = {}
   end
 
-  def add_student_pre(name, grade)
+  def add_student(name, grade)
     @roster[grade] = [] unless @roster[grade]
     @roster[grade] << name
-  end
-
-  def add_student(name, grade)
-    @roster[grade] ||= name
-    @roster
   end
 
   def grade(grade)
