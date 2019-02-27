@@ -23,7 +23,7 @@ class School
   def sort
     sorted = {}
     @roster.each do|key, values|
-      sorted[key] ||= values.sorted
+      sorted[key] ||= values.sort
     end
     sorted
   end
